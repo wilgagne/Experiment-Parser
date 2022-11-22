@@ -8,7 +8,6 @@ def extract(inputFile, outputFile, word):
         lines = f.readlines()
 
         for i in range(len(lines) - 1):
-            print(lines[i])
             if lines[i].find(word) != -1:
                 output.write(lines[i])
 
@@ -37,4 +36,3 @@ def intervalFinder(outputFile):
 if __name__ == '__main__':
     extract(str(sys.argv[1]), str(sys.argv[2]), str(sys.argv[3]))
     intervalFinder(str(sys.argv[2]))
-    # extract("/Users/williamgagne/Desktop/Lab/Propagation-Experiment-Results/output")
